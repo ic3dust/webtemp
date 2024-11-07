@@ -1,0 +1,13 @@
+.main{
+    background-color: rgb(156, 135, 135);
+    display: grid;
+    place-items: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-family: 'Kumbh Sans';
+    text-align: center;
+}
