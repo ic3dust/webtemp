@@ -28,8 +28,7 @@ html{
     position: sticky;
     top: 0;
     z-index: 999;
-    margin: 0px -50px;
-    width: 1400px;
+    width: 100%;
 }
 .navbar_container{
     font-style: italic;
@@ -38,7 +37,7 @@ html{
     height: 80px;
     z-index: 1;
     width: 100%;
-    max-width: 1200px;
+    max-width: 100vhpx;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -68,7 +67,7 @@ html{
     margin-right: 138.5px;
 }
 .navbar_links{
-    color: hsl(141, 37%, 27%);
+    color: hsl(0, 0%, 100%);
     display: flex;
     text-align: center;
     align-items:center;
@@ -76,6 +75,12 @@ html{
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
+    transform: scale(1);
+    transition: all 0.3s ease;
+}
+.navbar_links:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease;
 }
 .navbar_button{
     display: flex;
@@ -97,9 +102,9 @@ html{
     outline: none;
     border:none;
     background: linear-gradient(to top, #449962 0%, #0fde57 100%);
-    color: hsl(141, 37%, 27%);
+    color: hsl(0, 0%, 100%);
     transform: scale(1);
-    transition: background-color 1s ease-in-out 1s, transform 1s ease;
+    transition: background-color 0.3s ease-in-out 0.3s, transform 0.3s ease;
 }
 .button:hover{
     transform: scale(1.1);
@@ -114,13 +119,21 @@ html{
     display:flex;
     align-items: center;
     text-align: center;
-    margin-top: 1rem;
+    position: relative;
+    top:16%;
 }
-.top_combo p{
-    margin-right: 62px;
-    margin-top: 60px;
+.top_combo img{
+    position: relative;
+    left:3%;
+}
+.top_combe_p{
     font-size:1.5rem;
     font-family: 'Kumbh Sans';
+    text-align: right;
+    position: relative;
+    top:10%;
+    left: 6%;
+    width: 35%;
 }
 .socials{
     display: flex;
@@ -169,11 +182,12 @@ html{
     visibility: visible;
     opacity: 0.65;
 }
-.about_title{
+.about_title {
     font-size: 3rem;
-    align-items: center;
     text-align: center;
-    margin: 10%;
+    position: relative;
+    right:25%;
+    top:62%;
     font-weight: bolder;
     letter-spacing: 4px;
 }
@@ -181,15 +195,25 @@ html{
     display:flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: -20rem;
+    position: relative;
+    top:50%;
+    width: 100%;
 }
-.about_contents{
+.about_text{
     text-align: left;
     font-size: 1.2rem;;
+    position: relative;
+    right:55%;
+    width: 40%;
+    font-size: 1.5rem;
+    font-family: 'Kumbh Sans';
 }
-.about_il{
-    height: 50%;
-    width: 50%;
+.about_container img{
+    width: 43%;
+    height: 43%;
+    position: relative;
+    left:50%;
 }
+
 
 
