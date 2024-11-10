@@ -24,7 +24,7 @@ html{
     text-align: center;
     list-style-type: none;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -34,6 +34,7 @@ html{
     justify-content: space-between;
     font-style: italic;
     display: flex;
+    position: relative;
     height: 80px;
     z-index: 1;
     width: 100%;
@@ -55,28 +56,21 @@ html{
     text-decoration:none;
     font-size:2rem;
     font-weight: bold;
-    position: relative;
+    position: absolute;
+    left: 5%;
 }
 .navbar_menu{
-    align-items: center;
+    align-items: center;/*for home and button*/
     list-style-type: none;
     display: flex;
-    text-align: center;
-    flex-grow: 1;
+    text-align: center;/*for home and button*/
     justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
 }
 .navbar_item{
     height: 80px;
     margin: 0 10rem;
-}
-.navbar_item.link{
-    height: 80px;
-    margin: 0 -10rem;
-}
-.navbar_item:last-child{
-    margin-right: 0;
+    position: relative;
+    right:25%;
 }
 .navbar_links{
     color: hsl(0, 0%, 100%);
@@ -85,7 +79,6 @@ html{
     align-items:center;
     justify-content: center;
     text-decoration: none;
-    padding: 0 1rem;
     height: 100%;
     transform: scale(1);
     transition: all 0.3s ease;
@@ -100,6 +93,8 @@ html{
     align-items:center;
     justify-content: center;
     width: auto;
+    position: absolute;
+    right:5%;
 }
 .button{
     display: flex;
@@ -136,18 +131,18 @@ html{
 }
 .top_combo img{
     position:relative;
-    bottom:16%;
     width: 75%;
     height: 75%;
-    right: 6%;;
+    right:8ch;
+    bottom:16ch;
 }
 .top_combe_p{
     font-size:3.5vh;
     font-family: 'Kumbh Sans';
     text-align: right;
     position: relative;
-    bottom:8%;
-    right:8%;
+    bottom:5ch;
+    right:8ch;
     width: 35%;
 }
 .socials{
@@ -201,8 +196,8 @@ html{
     font-size: 3rem;
     text-align: center;
     position: relative;
-    right:25%;
-    top: 30%;
+    right: 16ch;
+    top: 5ch;
     font-weight: bolder;
     letter-spacing: 4px;
 }
@@ -211,13 +206,13 @@ html{
     align-items: center;
     justify-content: space-between;
     position: relative;
-    top: 20%;
+    top: 10ch;
     width: 100%;
 }
 .about_text{
     text-align: left;
     position: relative;
-    right:55%;
+    right:55ch;
     width: 40%;
     font-size: 3.5vh;
     font-family: 'Kumbh Sans';

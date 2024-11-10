@@ -10,9 +10,11 @@
 .title{
     font-family: 'Kumbh Sans';
     text-align: center;
-    font-size: 46px;
-    margin-right: 80vh;
-    top: 20%;
+    font-size: 3vw;
+    position: relative;
+    left:-30vh;
+    top: 5vh;
+    width:100%;
 }
 .title::before{
     content: '•';
@@ -24,22 +26,61 @@
 }
 .circle{
     background-color: #1f000d;
-    width: 20rem;
-    height: 20rem;
+    width: 30vw;
+    height: 30vw;
     border-radius: 50%;
-    margin-top: -18rem;
-    margin-left: -85rem;
-    z-index: 1;
+    position: relative;
+    right:-50vh;
+    top:-50vh;
+    z-index: 2;
+}
+.circle_2{
+    background-color: #1f000d;
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    position: relative;
+    left:-100vh;;
+    top: -116.5vh;
+    z-index: 2;
+}
+.circle_3{
+    background-color: #1f000d;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50%;
+    position: relative;
+    top:-120vh;
+    right:-10vw;
+}
+.circle_4{
+    background-color: #1f000d;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    position: absolute;
+    top:10vh;
+    left:10vh;
+}
+.circle_5 {
+    background-color: #1f000d;
+    width: 2.5vw;
+    height: 2.5vw;
+    border-radius: 50%;
+    position: absolute;
+    top:62vh;
+    right:170vh;
+    z-index: 2;
 }
 .rectangle {
     background-color: #1f000d;
     border-radius: 0%;
-    width: 30rem;
+    width: 35vw;
     margin-left: 70%;
     position: absolute;
     top: 0;
     height: 200vh;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,35 +92,34 @@
     text-align: left;
     font-family: 'Kumbh Sans';
     font-weight:bolder;
-    font-style: italic;
-    font-size: 38px;
-    position: relative;
+    font-size: 75px;
+    position: absolute;
     z-index: 999;
     max-width: 70%;
-    overflow: hidden;
-    word-wrap: break-word;
-    bottom: 21%;
-    right: 3%;
-    letter-spacing: 5px;
+    top:5%;
+    right:40%;
+    letter-spacing: 10px;
 }
 .info{
     font-style: italic;
     color: white;
     text-align:left;
     font-family: 'Kumbh Sans';
-    font-size: 18px;
-    position: relative;
+    font-size: 3vh;
+    position: absolute;
     z-index: 999;
-    max-width: 70%;
+    max-width: 100%;
     overflow: hidden;
     word-wrap: break-word;
-    bottom: 20%;
-    right:3%;
+    top: 15%;
+    left: 10%;
 }
 .rectangle img{
-    position: relative;
-    bottom:17%;
-    right: 3%;
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    translate: 35% 25%;
+    z-index: 999;
     width: 70%;
     max-width: 60%;
     height: 20%;
