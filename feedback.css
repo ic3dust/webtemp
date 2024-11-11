@@ -11,4 +11,109 @@
 .title {
     font-family: 'Kumbh Sans';
     text-align: center;
+    font-size: 3vw;
 }
+.qs{
+    align-items: center;
+    display: grid;
+    text-align: center;
+    justify-items: center;
+    /*flex-direction: column;*/
+    font-family: 'Kumbh Sans';
+    font-size: 3vw;
+    position: relative;
+    top:20%;
+}
+.btnG{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Kumbh Sans';
+    font-size:1.5vw;
+    border-radius: 5px;
+    background: linear-gradient(to top, #449962 0%, #0fde57 100%);
+}
+.btnG, .btnR, .btnN{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: 'Kumbh Sans';
+    font-size: 2vw;
+    border-radius: 15%;
+    border: 2px solid black;
+    font-weight: bolder;
+    font-style: italic;
+    color: black;
+    width: 33%;
+    height: 100%;
+}
+.btnG{
+    background: linear-gradient(to top, #449962 0%, #0fde57 100%);
+}
+.btnR{
+    background: linear-gradient(to top, #994444 0%, #de0f0f 100%);
+}
+.btnN{
+    background: linear-gradient(to top, #9a9a9a 0%, #d5d5d5 100%);
+}
+.btnN, .btnR, .btnG{
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+.q1, .q2, .q3{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    width:100%;
+    max-width: 1200px;
+    margin-bottom:2em;
+}
+.btns{
+    display:flex;
+    justify-content: space-around;
+    gap:1em;
+    margin-top: 2em;
+}
+.btnR:hover{
+    background: linear-gradient(to top, #c69393 0%, #ff7e7e 100%);
+}
+.btnG:hover{
+    background: linear-gradient(to top, rgb(117, 195, 144) 0%, #6bff9f 100%);
+}
+.btnN:hover{
+    background: linear-gradient(to top, #cfcfcf 0%, #ffffff 100%);
+}
+.btnR:hover, .btnG:hover, .btnN:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+#res{
+    font-size: 2vw;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid black;
+    background:#f0f0f0;
+    min-width: 5vw;
+    min-height: 8vh;
+    margin-top: 2ch;
+    margin-bottom: 1ch;
+}
+.resT{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Kumbh Sans';
+    font-size: 2vw;
+    font-weight: bolder;
+    margin-top: 25vh;
+}
+/*.btn:disabled{
+    cursor:not-allowed;
+    opacity:0.5;
+}
+.btn:not(:disabled){
+    cursor:pointer;
+    opacity:1;
+}*/
