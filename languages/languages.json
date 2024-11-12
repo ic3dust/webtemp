@@ -1,0 +1,10 @@
+{
+    "en":{
+        "welcome":"Welcome to ic3dust's page!",
+        "langy": "English"
+    },
+    "uk":{
+        "welcome":"Ласкаво прошу!",
+        "langy": "Українська"
+    }
+}

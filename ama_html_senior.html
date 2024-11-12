@@ -7,10 +7,23 @@
     <link rel="stylesheet" href="ama_css_master.css">
     <style> @import url('https://fonts.cdnfonts.com/css/cascadia-code')</style>
     <link href='https://fonts.googleapis.com/css?family=Kumbh Sans' rel='stylesheet'>
+    <script src="langs.js"></script>
 </head>
 <body>
     <div class="main">
-    <h1 class="welcome"> Welcome to ic3dust's page!</h1>
+    <h1 class="welcome" id="welcome"> Welcome to ic3dust's page!</h1>
+    <div class="lang_sel">
+        <h2 class="l_cont" id="langy"></h2>
+        <img src="images/gb.gif" class="lf" id="l_toggle" onclick="toggleLMenu()">
+    </div>
+    <div id="lang_menu" class="lang_menu">
+        <div class="lang_op" onclick="changeL('en')">
+            <img src="images/gb.gif" alt="English" class="flag_icon">English
+        </div>
+        <div class="lang_op" onclick="changeL('uk')">
+            <img src="images/uk.gif" alt="Ukrainian" class="flag_icon">Українська
+        </div>
+    </div>
     <nav class="navbar">
         <div class="navbar_container">
             <div class="navbar_toggle" id="mobile_menu">
