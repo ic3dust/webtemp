@@ -1,7 +1,6 @@
 html{
     scroll-behavior: smooth !important;
 }
-
 /*@font-face {
     font-family: 'Arimo';
     src: url('../webtemp/fonts/Arimo_Bold.woff2') format('woff2'),
@@ -93,6 +92,12 @@ h1, .welcome {
     position: relative;
     right: 50%;
 }
+html[lang="uk"] .navbar_item {
+    height: 80px;
+    margin: 0 4ch;
+    position: relative;
+    right: 50%;
+}
 .navbar_links{
     color: hsl(0, 0%, 100%);
     display: flex;
@@ -166,6 +171,11 @@ h1, .welcome {
     right:8ch;
     width: 35%;
 }
+html[lang="uk"] .top_combe_p{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    font-size: 3.2vh;
+}
 .socials{
     display: flex;
     width: auto;
@@ -238,6 +248,12 @@ h1, .welcome {
     font-size: 3.5vh;
     font-family: 'Kumbh Sans';
 }
+html[lang="uk"] .about_text {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    font-size: 3.5vh;
+    right: 55ch;
+}
 .about_container img{
     width: 43%;
     height: 43%;
@@ -260,8 +276,13 @@ h1, .welcome {
     right:2%;
     top:2%;
     cursor: pointer;
+    transform: scale(1);
+    transition: all 0.5s ease;
 }
-
+.lf:hover{
+    transform: scale(1.5);
+    transition: all 0.5s ease;
+}
 .lang_menu {
     display: none;
     position: absolute;
@@ -289,5 +310,4 @@ h1, .welcome {
 .flag_icon {
     width: 20px;
 }
-
 
