@@ -48,7 +48,7 @@
     height: 100%;
 }
 .btnG{
-    background: linear-gradient(to top, #449962 0%, #0fde57 100%);
+    background: linear-gradient(to top, #447e99 0%, #0fde57 100%);
 }
 .btnR{
     background: linear-gradient(to top, #994444 0%, #de0f0f 100%);
@@ -117,3 +117,13 @@
     cursor:pointer;
     opacity:1;
 }*/
+.btns button{
+    transition: transform 0.5s, opacity 0.5s;
+}
+.button:disabled{
+    cursor:not-allowed;
+}
+.selected{
+    transform: scale(1.2);
+    opacity: 0.75;
+}
